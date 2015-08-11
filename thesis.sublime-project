@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+			"path": "latex/",
+      "file_exclude_patterns": 
+        [
+          "*.aux",
+          "*.bbl",
+          "*.blg",
+          "*.fdb_latexmk",
+          "*.out",
+          "*.gz",
+          "*.toc",
+          "*.fls",
+          "*.log",
+          "*.sty"
+        ]
+    }
+  ]
+}
