@@ -523,64 +523,31 @@
 			"file": "latex/1introduction.tex",
 			"settings":
 			{
-				"buffer_size": 1075,
+				"buffer_size": 1867,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "latex/6conclusions.tex",
+			"settings":
+			{
+				"buffer_size": 221,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "latex/2methods.tex",
 			"settings":
 			{
-				"buffer_size": 191,
+				"buffer_size": 842,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "latex/3litterature.tex",
-			"settings":
-			{
-				"buffer_size": 143,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "latex/4empirical.tex",
-			"settings":
-			{
-				"buffer_size": 81,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "latex/sources.bib",
-			"settings":
-			{
-				"buffer_size": 5594,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Motivaatio.txt",
-			"settings":
-			{
-				"buffer_size": 760,
-				"line_ending": "Unix",
-				"name": "Sisäiset"
-			}
-		},
-		{
-			"file": "thesis.sublime-project",
-			"settings":
-			{
-				"buffer_size": 302,
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "latex/thesis.tex",
 			"settings":
 			{
-				"buffer_size": 14088,
+				"buffer_size": 12986,
 				"line_ending": "Windows"
 			}
 		}
@@ -616,10 +583,42 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 181.0,
-		"last_filter": "latecac",
+		"height": 375.0,
+		"last_filter": "git ",
 		"selected_items":
 		[
+			[
+				"git ",
+				"git: status"
+			],
+			[
+				"git",
+				"git: status"
+			],
+			[
+				"lorem",
+				"LoremIpsum: (30) lots"
+			],
+			[
+				"loerm",
+				"LoremIpsum: (30) lots"
+			],
+			[
+				"snippet",
+				"Snippet: Itemize"
+			],
+			[
+				"list",
+				"Snippet: Listing"
+			],
+			[
+				"itali",
+				"Snippet: Italic Shape Text"
+			],
+			[
+				"table",
+				"Snippet: New table"
+			],
 			[
 				"latecac",
 				"LaTeXing: Rebuild Cache (Hard)"
@@ -721,10 +720,6 @@
 				"Build With: LaTeX - Choose Quick Build"
 			],
 			[
-				"snippet",
-				"Snippet: BibTeX Misc"
-			],
-			[
 				"choose",
 				"Build With: LaTeX - Choose Quick Build"
 			],
@@ -775,10 +770,6 @@
 			[
 				"git statu",
 				"git: status"
-			],
-			[
-				"git ",
-				"git: graph"
 			],
 			[
 				"git log",
@@ -879,10 +870,6 @@
 			[
 				"ins",
 				"Package Control: Install Package"
-			],
-			[
-				"lorem",
-				"LoremIpsum: (200) stick shake"
 			],
 			[
 				"mark prev",
@@ -1122,8 +1109,15 @@
 	],
 	"file_history":
 	[
-		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/.#thesis-example.tex",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/.gitignore",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/appendices.tex",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/2methods.tex",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/3litterature.tex",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/4empirical.tex",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/Motivaatio.txt",
 		"/Users/oehn/Dropbox/Kurser/Master's Thesis/thesis.sublime-project",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/thesis.tex",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/.#thesis-example.tex",
 		"/Users/oehn/Projects/Polymer-Piikki/firebase.html",
 		"/Users/oehn/work/helen/helen-hima-web/web/app/app.js",
 		"/Users/oehn/work/helen/helen-hima-web/web/main.js",
@@ -1242,14 +1236,7 @@
 		"/Users/oehn/work/innfin/fintech_innfincms/includes/pager.inc",
 		"/Users/oehn/work/innfin/fintech_innfincms/sites/all/themes/nestor_innfin/templates/views-view-fields--public-members-list.tpl.php",
 		"/Users/oehn/work/innfin/fintech_innfincms/sites/all/themes/nestor/template.php",
-		"/Users/oehn/work/innfin/tmp/themes/seven/template.php",
-		"/Users/oehn/work/innfin/tmp/themes/garland/template.php",
-		"/Users/oehn/work/innfin/tmp/themes/bartik/template.php",
-		"/Users/oehn/work/innfin/fintech_innfincms/themes/seven/template.php",
-		"/Users/oehn/work/innfin/fintech_innfincms/themes/garland/template.php",
-		"/Users/oehn/work/innfin/fintech_innfincms/themes/bartik/template.php",
-		"/Users/oehn/work/innfin/test.html",
-		"/Users/oehn/work/innfin/fintech_innfincms/modules/node/node.tpl.php"
+		"/Users/oehn/work/innfin/tmp/themes/seven/template.php"
 	],
 	"find":
 	{
@@ -1281,6 +1268,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"enumerate",
+			"p{",
+			"-",
+			"50pt",
+			"c",
 			"18",
 			"Olli Ohjaaja",
 			"Antti Ylä-Jääski\\\\\n  Professor Pekka Perustieteilijä",
@@ -1403,12 +1395,7 @@
 			"1",
 			":before",
 			"font-weight: lighter;\n	text-transform: uppercase;",
-			"font-weight: lighter;",
-			"font-family: 'NeoTech Std', Helvetica, Arial, sans-serif;\n	font-weight: lighter;",
-			"before",
-			"border-radius: 3px 3px 0 0;",
-			"before",
-			"block-mailch"
+			"font-weight: lighter;"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1430,7 +1417,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1439,15 +1426,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1075,
+						"buffer_size": 1867,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1071,
-								1071
+								642,
+								816
 							]
 						],
 						"settings":
@@ -1462,24 +1449,55 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "latex/2methods.tex",
+					"file": "latex/6conclusions.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 191,
+						"buffer_size": 221,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								191,
-								191
+								220,
+								220
+							]
+						],
+						"settings":
+						{
+							"WordCountSyntax": "latex",
+							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/6conclusions.tex",
+							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
+							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "latex/2methods.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 842,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								532,
+								532
 							]
 						],
 						"settings":
@@ -1496,190 +1514,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "latex/3litterature.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 143,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								142,
-								142
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"WordCountSyntax": "latex",
-							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/3litterature.tex",
-							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
-							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "latex/4empirical.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 81,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								81,
-								81
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"WordCountSyntax": "latex",
-							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/4empirical.tex",
-							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
-							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "latex/sources.bib",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 5594,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"WordCountSyntax": "bibtex",
-							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/sources.bib",
-							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
-							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Motivaatio.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 760,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								756,
-								756
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"WordCountSyntax": "markdown",
-							"auto_name": "Sisäiset",
-							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/Motivaatio.txt",
-							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
-							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "thesis.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 302,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"WordCountSyntax": "json",
-							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/thesis.sublime-project",
-							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "latex/thesis.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14088,
+						"buffer_size": 12986,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10469,
-								10469
+								1716,
+								1716
 							]
 						],
 						"settings":
@@ -1691,10 +1543,10 @@
 							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2996.0,
+						"translation.y": 3788.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
