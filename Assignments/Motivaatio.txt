@@ -37,5 +37,8 @@ yks keissi, eli ei voi yleistää liikaa
 
 Muutos processissa verrattuna kirjallisuuteen se mitä tutkitaan
 
-
 ================
+
+I'm studying what, if any, best practices exist for lean software projects based on the current litterature and how these change when working with new and unfamiliar technology. The context for this work is one project utilizing virtual reality to create a new service.
+
+

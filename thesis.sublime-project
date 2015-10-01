@@ -2,7 +2,7 @@
 	"folders":
 	[
 		{
-			"path": "latex/",
+			"path": ".",
       "file_exclude_patterns": 
         [
           "*.aux",

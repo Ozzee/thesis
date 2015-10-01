@@ -520,35 +520,93 @@
 	"buffers":
 	[
 		{
-			"file": "latex/1introduction.tex",
+			"file": "latex/thesis.tex",
 			"settings":
 			{
-				"buffer_size": 1867,
+				"buffer_size": 13083,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "latex/6conclusions.tex",
+			"file": "latex/1introduction.tex",
 			"settings":
 			{
-				"buffer_size": 221,
+				"buffer_size": 2776,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "latex/2background.tex",
+			"settings":
+			{
+				"buffer_size": 1490,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "latex/3litterature.tex",
+			"settings":
+			{
+				"buffer_size": 2660,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Motivaatio.txt",
+			"settings":
+			{
+				"buffer_size": 1350,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "latex/2methods.tex",
+			"file": "Tehtävät/day1.md",
 			"settings":
 			{
-				"buffer_size": 842,
+				"buffer_size": 954,
+				"line_ending": "Unix",
+				"name": "day1.md"
+			}
+		},
+		{
+			"file": "Tehtävät/aikataulu.txt",
+			"settings":
+			{
+				"buffer_size": 337,
+				"line_ending": "Unix",
+				"name": "0   PDF jota voi kommentoida"
+			}
+		},
+		{
+			"file": "latex/4methods.tex",
+			"settings":
+			{
+				"buffer_size": 396,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "latex/thesis.tex",
+			"file": "latex/5results.tex",
 			"settings":
 			{
-				"buffer_size": 12986,
+				"buffer_size": 280,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "latex/6discussion.tex",
+			"settings":
+			{
+				"buffer_size": 285,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "latex/7conclusions.tex",
+			"settings":
+			{
+				"buffer_size": 313,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -583,16 +641,40 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 375.0,
-		"last_filter": "git ",
+		"height": 159.0,
+		"last_filter": "push",
 		"selected_items":
 		[
 			[
-				"git ",
+				"push",
+				"git: push"
+			],
+			[
+				"gitstat",
+				"git: status"
+			],
+			[
+				"latecac",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"latexia ca",
+				"LaTeXing: Synchronise Remote Data"
+			],
+			[
+				"git push",
+				"git: push"
+			],
+			[
+				"git st",
 				"git: status"
 			],
 			[
 				"git",
+				"git: status"
+			],
+			[
+				"git ",
 				"git: status"
 			],
 			[
@@ -618,10 +700,6 @@
 			[
 				"table",
 				"Snippet: New table"
-			],
-			[
-				"latecac",
-				"LaTeXing: Rebuild Cache (Hard)"
 			],
 			[
 				"color",
@@ -1078,10 +1156,6 @@
 			[
 				"package",
 				"Package Control: Install Package"
-			],
-			[
-				"toggle si",
-				"View: Toggle Open Files in Side Bar"
 			]
 		],
 		"width": 516.0
@@ -1105,18 +1179,24 @@
 	},
 	"expanded_folders":
 	[
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis",
 		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex"
 	],
 	"file_history":
 	[
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/Motivaatio.txt",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/Remote.bib",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/sources.bib",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/4results.tex",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/thesis.tex",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/1introduction.tex",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/6conclusions.tex",
+		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/2methods.tex",
 		"/Users/oehn/Dropbox/Kurser/Master's Thesis/.gitignore",
 		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/appendices.tex",
-		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/2methods.tex",
 		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/3litterature.tex",
 		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/4empirical.tex",
-		"/Users/oehn/Dropbox/Kurser/Master's Thesis/Motivaatio.txt",
 		"/Users/oehn/Dropbox/Kurser/Master's Thesis/thesis.sublime-project",
-		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/thesis.tex",
 		"/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/.#thesis-example.tex",
 		"/Users/oehn/Projects/Polymer-Piikki/firebase.html",
 		"/Users/oehn/work/helen/helen-hima-web/web/app/app.js",
@@ -1231,12 +1311,7 @@
 		"/Users/oehn/work/innfin/innfin (2).sql",
 		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
 		"/Users/oehn/work/innfin/fintech_innfincms/sites/all/themes/nestor_innfin/template.php",
-		"/Users/oehn/work/innfin/fintech_innfincms/sites/all/themes/nestor_innfin/css/nestor_innfin_colors.css",
-		"/Users/oehn/work/innfin/fintech_innfincms/sites/all/themes/nestor_innfin/templates/page.tpl.php",
-		"/Users/oehn/work/innfin/fintech_innfincms/includes/pager.inc",
-		"/Users/oehn/work/innfin/fintech_innfincms/sites/all/themes/nestor_innfin/templates/views-view-fields--public-members-list.tpl.php",
-		"/Users/oehn/work/innfin/fintech_innfincms/sites/all/themes/nestor/template.php",
-		"/Users/oehn/work/innfin/tmp/themes/seven/template.php"
+		"/Users/oehn/work/innfin/fintech_innfincms/sites/all/themes/nestor_innfin/css/nestor_innfin_colors.css"
 	],
 	"find":
 	{
@@ -1268,6 +1343,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"liikaa",
 			"enumerate",
 			"p{",
 			"-",
@@ -1394,8 +1470,7 @@
 			"top-content-re",
 			"1",
 			":before",
-			"font-weight: lighter;\n	text-transform: uppercase;",
-			"font-weight: lighter;"
+			"font-weight: lighter;\n	text-transform: uppercase;"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1417,24 +1492,56 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "latex/1introduction.tex",
+					"file": "latex/thesis.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1867,
+						"buffer_size": 13083,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								642,
-								816
+								12271,
+								12271
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "latex",
+							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/thesis.tex",
+							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
+							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "latex/1introduction.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2776,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1063,
+								1063
 							]
 						],
 						"settings":
@@ -1449,62 +1556,31 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "latex/6conclusions.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 221,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								220,
-								220
-							]
-						],
-						"settings":
-						{
-							"WordCountSyntax": "latex",
-							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/6conclusions.tex",
-							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
-							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "latex/2methods.tex",
+					"file": "latex/2background.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 842,
+						"buffer_size": 1490,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								532,
-								532
+								1290,
+								1290
 							]
 						],
 						"settings":
 						{
 							"WordCountShouldRun": true,
 							"WordCountSyntax": "latex",
-							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/2methods.tex",
+							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/2background.tex",
 							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
 							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage",
 							"tab_size": 2,
@@ -1514,39 +1590,269 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "latex/thesis.tex",
+					"file": "latex/3litterature.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12986,
+						"buffer_size": 2660,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1716,
-								1716
+								802,
+								802
 							]
 						],
 						"settings":
 						{
 							"WordCountShouldRun": true,
 							"WordCountSyntax": "latex",
-							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/thesis.tex",
+							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/2litterature.tex",
+							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
+							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Motivaatio.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								290,
+								290
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "markdown",
+							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/Motivaatio.txt",
+							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 9.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Tehtävät/day1.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								473,
+								473
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"auto_name": "day1.md",
+							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/Tehtävät/day1.md",
+							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Tehtävät/aikataulu.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"auto_name": "0   PDF jota voi kommentoida",
+							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/Tehtävät/aikataulu.txt",
+							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "latex/4methods.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "latex",
+							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/3methods.tex",
+							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
+							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "latex/5results.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								279,
+								279
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "latex",
+							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/4results.tex",
 							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
 							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3788.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "latex/6discussion.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "latex",
+							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/5discussion.tex",
+							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
+							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "latex/7conclusions.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								313
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "latex",
+							"git_savvy.file_path": "/Users/oehn/Dropbox/Kurser/Master's Thesis/latex/6conclusions.tex",
+							"git_savvy.repo_path": "/Users/oehn/Dropbox/kurser/Master's Thesis",
+							"syntax": "Packages/LaTeXing/support/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -1829,6 +2135,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"~/Dropbox/Kurser/Master's Thesis/thesis.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
