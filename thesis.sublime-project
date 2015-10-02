@@ -3,7 +3,7 @@
 	[
 		{
 			"path": ".",
-      "file_exclude_patterns": 
+      "file_exclude_patterns":
         [
           "*.aux",
           "*.bbl",
@@ -13,8 +13,7 @@
           "*.gz",
           "*.toc",
           "*.fls",
-          "*.log",
-          "*.sty"
+          "*.log"
         ]
     }
   ]

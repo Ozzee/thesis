@@ -6,7 +6,7 @@
 
 
 \usepackage[square,sort&compress,numbers]{natbib}
-\usepackage{eurosym} 
+\usepackage{eurosym}
 
 \usepackage{verbatim}
 
@@ -29,12 +29,12 @@
 % The aalto-thesis package provides typesetting instructions for the
 % standard master's thesis parts (abstracts, front page, and so on)
 % Load this package second-to-last, just before the hyperref package.
-% Options that you can use: 
-%   mydraft - renders the thesis in draft mode. 
-%             Do not use for the final version. 
+% Options that you can use:
+%   mydraft - renders the thesis in draft mode.
+%             Do not use for the final version.
 %   doublenumbering - [optional] number the first pages of the thesis
 %                     with roman numerals (i, ii, iii, ...); and start
-%                     arabic numbering (1, 2, 3, ...) only on the 
+%                     arabic numbering (1, 2, 3, ...) only on the
 %                     first page of the first chapter
 %   twoinstructors  - changes the title of instructors to plural form
 %   twosupervisors  - changes the title of supervisors to plural form
@@ -61,7 +61,7 @@
 
 % Supervisors and instructors
 % ------------------------------------------------------------------
-% If you have two supervisors, write both names here, separate them with a 
+% If you have two supervisors, write both names here, separate them with a
 % double-backslash (see below for an example)
 % Also remember to add the package option ``twosupervisors'' or
 % ``twoinstructors'' to the aalto-thesis package so that the titles are in
@@ -76,12 +76,9 @@
 \newcommand{\SSUPERVISOR}{Professor Marjo Kauppinen}
 
 % If you have only one instructor, just write one name here
-\newcommand{\INSTRUCTOR}{Eeva \\
-Suvi}
-\newcommand{\FINSTRUCTOR}{Eeva \\
-Suvi}
-\newcommand{\SINSTRUCTOR}{Eeva \\
-Suvi}
+\newcommand{\INSTRUCTOR}{Suvi Uski (?)}
+\newcommand{\FINSTRUCTOR}{Suvi Uski (?)}
+\newcommand{\SINSTRUCTOR}{Suvi Uski (?)}
 % If you have two instructors, separate them with \\ to create linefeeds
 % \newcommand{\INSTRUCTOR}{Olli Ohjaaja M.Sc. (Tech.)\\
 %  Elli Opas M.Sc. (Tech)}
@@ -108,9 +105,9 @@ Suvi}
 \newcommand{\SPROFESSORSHIP}{Programvaruproduktion och -affärsverksamhet}
 % Professorship code is the same in all languages
 \newcommand{\PROFCODE}{T-76}
-\newcommand{\KEYWORDS}{innovation, services, service design}
-\newcommand{\FKEYWORDS}{innovaatio, palvelut, palvelusuunnittelu}
-\newcommand{\SKEYWORDS}{innovation, tjänster, service design}
+\newcommand{\KEYWORDS}{lean, lean software, lean software project, service creation, agile, LSC}
+\newcommand{\FKEYWORDS}{}
+\newcommand{\SKEYWORDS}{}
 \newcommand{\LANGUAGE}{English}
 \newcommand{\FLANGUAGE}{Englanti}
 \newcommand{\SLANGUAGE}{Engelska}
@@ -146,14 +143,14 @@ Suvi}
 
 
 
-% The preamble ends here, and the document begins. 
+% The preamble ends here, and the document begins.
 % Place all formatting commands and such before this line.
 % ------------------------------------------------------------------
 \begin{document}
 % This command adds a PDF bookmark to the cover page. You may leave
 % it out if you don't like it...
 \pdfbookmark[0]{Cover page}{bookmark.0.cover}
-% This command is defined in aalto-thesis.sty. It controls the page 
+% This command is defined in aalto-thesis.sty. It controls the page
 % numbering based on whether the doublenumbering option is specified
 \startcoverpage
 
@@ -172,30 +169,13 @@ Suvi}
 % Abstract in English
 % ------------------------------------------------------------------
 \thesisabstract{english}{
-A dissertation or thesis is a document submitted in support of candidature
-for a degree or professional qualification presenting the author's research and
-findings. In some countries/universities, the word thesis or a cognate is used
-as part of a bachelor's or master's course, while dissertation is normally
-applied to a doctorate, whilst, in others, the reverse is true.
+This thesis presents the core concepts of lean software development and how they are affected by the introduction of unfamiliar technology. Existing case studies on lean software development projects are analyzed for practical implementations of the core principles. The case studies are compared to each other and to the principles presented in the seminal works on lean software development.
 
-\fixme{Abstract text goes here (and this is an example how to use fixme).} 
-Fixme is a command that helps you identify parts of your thesis that still
-require some work. When compiled in the custom \texttt{mydraft} mode, text
-parts tagged with fixmes are shown in bold and with fixme tags around them. When
-compiled in normal mode, the fixme-tagged text is shown normally (without
-special formatting). The draft mode also causes the ``Draft'' text to appear on
-the front page, alongside with the document compilation date. The custom
-\texttt{mydraft} mode is selected by the \texttt{mydraft} option given for the
-package \texttt{aalto-thesis}, near the top of the \texttt{thesis-example.tex}
-file.
+The current literature on lean software development is derived from the literature on lean manufacturing. Lean thinking was originally based on five principles: value, value stream, flow, pull and perfection. These have since been refined to seven principles specific to software development: optimize the whole, eliminate waste, build quality in, learn constantly, deliver fast, engage everyone and keep getting better. These principles can be applied as various practices in software projects depending on the context.
 
-The thesis example file (\texttt{thesis-example.tex}), all the chapter content
-files (\texttt{1introduction.tex} and so on), and the Aalto style file
-(\texttt{aalto-thesis.sty}) are commented with explanations on how the Aalto
-thesis works. The files also contain some examples on how to customize various
-details of the thesis layout, and of course the example text works as an
-example in itself. Please read the comments and the example text; that should
-get you well on your way!}
+The principles hold well for the general domain. This thesis studies whether they work as such for projects where the technology domain is also unfamiliar to the project team. The study finds that the principles either hold or do not hold. The thesis speculates as to why they do or do not hold up as such.
+
+}
 
 % Abstract in Finnish
 % ------------------------------------------------------------------
@@ -223,11 +203,11 @@ get you well on your way!}
 % Select the language you use in your acknowledgements
 \selectlanguage{english}
 
-% Uncomment this line if you wish acknoledgements to appear in the 
+% Uncomment this line if you wish acknoledgements to appear in the
 % table of contents
 %\addcontentsline{toc}{chapter}{Acknowledgements}
 
-% The star means that the chapter isn't numbered and does not 
+% The star means that the chapter isn't numbered and does not
 % show up in the TOC
 \chapter*{Acknowledgements}
 
@@ -241,7 +221,7 @@ TODO: Thank people here
 
 % Acronyms
 % ------------------------------------------------------------------
-% Use \cleardoublepage so that IF two-sided printing is used 
+% Use \cleardoublepage so that IF two-sided printing is used
 % (which is not often for masters theses), then the pages will still
 % start correctly on the right-hand side.
 %\cleardoublepage
@@ -254,20 +234,20 @@ TODO: Thank people here
 % This command adds a PDF bookmark that links to the contents.
 % You can use \addcontentsline{} as well, but that also adds contents
 % entry to the table of contents, which is kind of redundant.
-% The text ``Contents'' is shown in the PDF bookmark. 
+% The text ``Contents'' is shown in the PDF bookmark.
 \pdfbookmark[0]{Contents}{bookmark.0.contents}
 \tableofcontents
 
 % List of tables
 % ------------------------------------------------------------------
-% You only need a list of tables for your thesis if you have very 
+% You only need a list of tables for your thesis if you have very
 % many tables. If you do, uncomment the following two lines.
 % \cleardoublepage
 % \listoftables
 
 % Table of figures
 % ------------------------------------------------------------------
-% You only need a list of figures for your thesis if you have very 
+% You only need a list of figures for your thesis if you have very
 % many figures. If you do, uncomment the following two lines.
 % \cleardoublepage
 % \listoffigures
@@ -278,7 +258,7 @@ TODO: Thank people here
 
 %%%%%%%%%%%%%%%%% The main content starts here %%%%%%%%%%%%%%%%%%%%%
 % ------------------------------------------------------------------
-% This command is defined in aalto-thesis.sty. It controls the page 
+% This command is defined in aalto-thesis.sty. It controls the page
 % numbering based on whether the doublenumbering option is specified
 \startfirstchapter
 
@@ -321,6 +301,6 @@ TODO: Thank people here
 % The LastPage package automatically places a label on the last page.
 % That works better than placing a label here manually, because the
 % label might not go to the actual last page, if LaTeX needs to place
-% floats (that is, figures, tables, and such) to the end of the 
+% floats (that is, figures, tables, and such) to the end of the
 % document.
 \end{document}
