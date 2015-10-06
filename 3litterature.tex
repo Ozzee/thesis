@@ -36,17 +36,67 @@ Google Scholar was the primary source for material on lean and lean software dev
 
 \fixme{In this section I will present the principles for lean software development as presented in \cite{poppendieck2003lean} and subsequent articles.}
 
-\section{Comparison of past lean projects}
+\section{Comparison of past case studies}
 \label{section:pastleanprojects}
 
-In this section I will compare articles regarding case studies focusing on lean software development/management.
+This section compares the existing literature on lean software projects.\\
 
-Two case studies. This is an early attempt to test lean software development. The article covers an experiment set up to test the validity of using lean principles in software development. \cite{Middleton2001Lean}
+
+\subsection{Timberline Inc.}
+\label{timberline}
 
 Timberline Inc. case study. Probably the first case of adopting lean principles to software development.\cite{Middleton2005Lean}
 
+
+\subsection{BBC Worldwide}
+\label{bbc}
+
 BBC Worldwide case study. The gist of it is that the performance of the team improved when adopting lean practices, but there were some challenges in fitting the the lean principles with the rest of the company.\cite{Middleton2012Lean}
 
+
+\subsection{Electrobit}
+\label{finnishprovider}
+
+Electrobit is a Finnish provider of wireless embedded systems. The case study was conducted in 2010 and the organization had used agile practices since 2007. The case study followed how some key performance indicators (KPI) changed as the organization started using lean practices. \cite{Rodriguez2014Combining}
+
+The study was particularly focused on how lean and agile practices can be combined in software development. The authors focused on elements that characterize the combination of lean and agile. They were also interested in what challenges the combination presents, as well as which elements of the combination were easy to implement.\cite{Rodriguez2014Combining} As agile has only appeared to increase in popularity in the software development business this study is a good reference on how lean and agile can be combined in order to produce software. The hardware related business also presents some unique challenges compared to purely software based models of lean and agile.
+
+The study found that the move to lean had indeed influenced practices of the company. Discussions with employees revealed that the lean principles had expanded concepts like reducing waste to be considered throughout the organization. In comparison, previous practices had left these responsibilities largely on the product owner alone. However, the change from agile to lean was described as ``an incremental improvement in which Agile is not abandoned when Lean is adopted.''\cite{Rodriguez2014Combining}. This is quite natural, as agile practices focus more on the software development work whereas lean takes a more holistic approach to the whole value chain.
+
+When the subject was speed and flexibility the discussions with the subjects of the study focused on the importance of short lead-times and the ability to cope with change.\cite{Rodriguez2014Combining} These are important questions business-wise, as maneuvering fast and responding to change can be the deciding factor in a fast paced environment like software development. Responding to change is one of the things both agile and lean aim to enable in order to cope with chaotic systems.
+
+Eliminating waste was seen as an aspect specifically related to lean principles that had not been incorporated in the earlier, agile, practices. Tightly related to that, seeing the whole also brought a more holistic approach to the company compared to the agile mindset before the change. When discussing specific practices, minimizing work-in-progress (WIP) was found to be easy to motivate and understand as a way to reduce waste.\cite{Rodriguez2014Combining} This becomes clear when one thinks of unfinished code as being the software equivalent of inventory with possible bugs and unnecessary or unwanted features.
+
+Electrobit's ways of working also enabled them to have short feedback cycles. This is a critical component for the ability to adapt and respond to change quickly. They also handled uncertainty by continuous learning. Estimations were small but accurate, which is the typical way for agile estimations to work. Another aspect that related to both agile and lean was that participants in the study pointed out that delaying decision making should not affect the release of the software.\cite{Rodriguez2014Combining} This borrows from agile as it does not allow the schedule to be delayed, but recognizes that lean principles call for delaying a decision until it has to be made in order to keep all options open.
+
+Lean principles emphasize ``perfection'' or ``learn constantly'', at Electrobit they found that Kanban provided an added value as a process because of its ability to visualize queues and enable finding the root cause of problems \cite{Rodriguez2014Combining}. Agile also focuses on continuous improvement, so the change towards lean was  likely a natural evolution towards organizational learning from the more team focused approach of agile.
+
+Learning was enabled by organizational transparency. This was the most stressed element of the discussions with the participants of the study. Transparency enabled knowledge sharing and enabled visibility on all organizational layers and in all directions. \cite{Rodriguez2014Combining}
+
+Finally, participants chose to mention the people factor of software development. This is very much related to agile, but has its place in lean principles as well in the form of ``engage everyone'' as presented by \cite{poppendieck2003lean}.
+
+The study presents some challenges that Electrobit encountered regarding lean principles. Flexibility of the whole value stream was a challenge. Teams also perceived that they were unable remove waste even though they had identified it due to complex project set-ups. Long feedback loops were still an issue due to challenges in involving management and third parties into the development process. \cite{Rodriguez2014Combining} These challenges are familiar from traditional lean manufacturing and agile software development, which could mean that lean software development was not a silver bullet in this case, even if it did improve the overall situation.
+
+\fixme{TODO: compare more thoroughly with other cases and poppendieck}
+
+\subsection{Two Case Studies}
+\label{twocasestudies}
+
+In ``Lean Software Development: Two Case Studies''\cite{Middleton2001Lean} author Peter Middleton sets out to study whether lean principles can be applied to software development. This study appears to be one of the first studies that tackles this question and predates the work of Poppendieck \& Poppendieck published in 2003.
+
+The study presents the foundation of lean principles and how they might be applied to software development. The most important result, however, is the experiment conducted by Middleton to study the effects of applying lean methods on a traditional software process. In this experiment, two small teams in a large organization were selected to try lean practices in their daily work.\cite{Middleton2001Lean}
+
+The traditional process was first streamlined somewhat to enable the introduction of lean principles. Once the new process was stable, lean principles were introduced. The implementation focused most on aiming to reduce waste by stopping the process once a defect was found. This initially slowed down both teams, as team members were not allowed to work on other tasks while the issue was resolved. This was done to limit their WIP. Once the teams learned to see defects and address them more quickly overall progress improved compared to the traditional process.\cite{Middleton2001Lean}
+
+Although the study is very limited, focusing on two small teams for a short period of time, it is able to highlight some of the most prominent organizational challenges. In this particular organization the hierarchical structure of the teams introduced friction in reporting issues, which is an essential part of lean. The hierarchy also fostered a culture where people needed to take jobs they had little aptitude for in order to advance in their careers. One manager also felt that they were securing their job by not sharing information. This could have been a result of the organizations less than ideal policies on learning, which were mentioned as a challenge for the application of lean. Finally, some aspects of the lean process were hindered by third parties inside the organization who were unable to deliver the required quality.\cite{Middleton2001Lean}
+
+An overall conclusion of the problems uncovered in the study was that problems were often a result of organizational challenges, and the issues with quality were, in fact, the symptom of deeper problems. Finally, the study also concluded that ``no inherent reason has been found to suggest that lean techniques cannot be used in software process.''\cite{Middleton2001Lean}. This might have influenced others to try to replicate these results in larger studies.
+
+\fixme{TODO: compare more thoroughly with other cases and poppendieck}
+
+
+\subsection{Others}
+\label{othercases}
 
 \section{Research problem and question}
 \label{section:problem}
