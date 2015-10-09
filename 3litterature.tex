@@ -3,7 +3,7 @@
 \chapter{Literature review}
 \label{chapter:litterature}
 
-This chapter presents the existing literature on lean software development. The methods used for gathering academic sources is presented, as well as a general overview on the subject. Finally existing literature on past lean software development projects are compared to the general principles of lean and to each other.
+This chapter presents the existing literature on lean software development. The methods used for gathering academic sources is presented, as well as a general overview on the subject. Finally existing literature on past lean software development projects are compared to the general principles of lean software development and to each other.
 
 \section{Literature overview}
 \label{section:litoverview}
@@ -34,24 +34,139 @@ Google Scholar was the primary source for material on lean and lean software dev
 \section{Lean software principles}
 \label{section:leansoftwareprinciples}
 
-\fixme{In this section I will present the principles for lean software development as presented in \cite{poppendieck2003lean} and subsequent articles.}
+One book in particular has been the foundation of many lean initiatives of various kinds. This is the work by Poppendieck \& Poppendieck in ``Lean Software Development: An Agile Toolkit''. In this book the authors motivate why lean works in software development and translate some of the common aspects of lean manufacturing into the language of software development. They also present seven principles of lean software development. These are adaptations and expansion of the principles developed for lean manufacturing.\cite{poppendieck2003lean}
 
-\section{Comparison of past case studies}
+\subsection{Eliminate waste}
+
+Eliminate waste is the fundamental principle of lean. Waste in this context is understood as anything that does not produce value to the customer. This may seem like a clear definition, but once one starts measuring what is actually producing value and what is not the results may be surprising. In manufacturing inventory is considered to be waste. Ideally products should move from one stage to the next immediately. In software engineering one equivalent of inventory is unfinished features.\cite{poppendieck2003lean} 
+
+One of the main reasons why inventory is considered waste is that inventory may contain defects that have not yet been discovered. These defects become much more expensive to fix later in the process. Defects are discovered much faster in the next steps of the process when batch sizes are small and inventory is minimal. In software engineering inventory often manifests as features waiting for testing or other forms of approval. Inventory in the form of features stuck at some crucial point in the system may also be blocking other, more important features.\cite{poppendieck2003lean}
+
+Learning to see waste can be challenging when unfamiliar with the concept. For this reason Poppendieck \& Poppendieck have gathered together a list of the seven wastes of software development. This list is based on the seven wastes of manufacturing by Shigeo Shingo\cite{poppendieck2003lean}\fixme{Does this need its own reference?}. This list is presented in table \ref{tbl:sevenwastes}.
+
+\begin{table}
+  \begin{tabular}{| l |}
+    \hline
+    The Seven Wastes of Software Development \\
+    \hline
+    Partially done work\\
+    Extra processes\\
+    Extra features\\
+    Task switching\\
+    Waiting\\
+    Motion\\
+    Defect\\
+    \hline
+  \end{tabular}
+  \caption{The seven wastes of software development as defined by \cite{poppendieck2003lean}}
+  \label{tbl:sevenwastes}
+\end{table}
+
+Eliminate waste is one principle that is present in all of the case studies presented in this paper \cite{Middleton2001Lean}\cite{Middleton2012Lean}\cite{Middleton2005Lean}\cite{Rodriguez2014Combining}. This seems to indicate that this is indeed considered to be the most important principle of lean.
+
+\subsection{Amplify learning}
+
+Amplify learning is the second principle presented in the book, and focuses on quality and learning\cite{poppendieck2003lean}. This principle was later redefined by Poppendieck as ``learn constanstly''\cite{Poppendieck2010Lean}. The principle of learning is crucial in lean, as the whole process is based on the aforementioned concept of removing waste. For this to be successful waste needs to be identified and this skill has to be learned. The book presents several tools to help facilitate learning. 
+
+Many of the tools presented are familiar from the world of agile software development. Feedback is a natural and effective part of learning. For this to be an effective tool in practice there needs to be a feedback cycle and effort to gather feedback. The book also mentions that software projects are often ill structured problems where a mentality of trying something first then fixing it works better than a predetermined plan.\cite{poppendieck2003lean} This ties closely to the build-measure-learn cycle proposed by Ries \cite{ries2011lean}. Another way of looking at is is seeing the software context as a chaotic system where a clear solution is not known.\fixme{source?}
+
+The authors also mention iterations, a concept central to agile development. Iterations enable learning as knowledge about the process and project is refined each iteration. \cite{poppendieck2003lean}
+
+A couple of tools that are probably not as familiar to those familiar with agile methodologies are synchronization and set-based development. Synchronization is closely related to continous integration and set-based development explores multiple options simultaneously before committing to one solution.\cite{poppendieck2003lean}
+
+\subsection{Decide as late as possible}
+
+Deciding as late as possible is about keeping several option available until the last responsible moment to make a decision. The reason is the same for lean as it is in agile: there will be changes, so the right thing to do is prepare to be able to handle change.\cite{poppendieck2003lean}
+
+Lean principles recognize that it has hard to understand a problem perfectly the first time and plan accordingly. Keeping several options available while learning about the problem and trying different approaches increases the chance of having a working solution when a decision has to be made. \cite{poppendieck2003lean}
+
+The book also points out that deciding as late as possible is not about avoiding decisions until it is too late. A decision should be made at the last responsible moment.\cite{poppendieck2003lean} Of course, it may not be easy to know exactly when that moment is, but it is still better than not deciding or locking oneself to one solution that turns out to be the wrong one.
+
+This chapter of the book also mentions several practices that are generally considered good development practices. Separation of concerns, interfaces, and modules are mentioned as some examples of practices that enable deciding as late as possible.\cite{poppendieck2003lean} All of the examples mentioned in the book are ones that could be considered universal good practices for software development. It follows, that lean does not conflict with agile, or indeed any other development methodology, but rather encourages good praxis.
+
+Empowerment is also mentioned as a way of deciding as late as possible. In this context empowerment is about teaching the people working on a project to how to make decision. The idea is that the people working on the project are those who know the needs of the project and can make the best decisions about how to proceed. By allowing the team to make the decision it is possible to avoid overhead and get the best possible information available. There is no need for management to get involved, which frees up management resources for other tasks.\cite{poppendieck2003lean}
+
+\subsection{Deliver as fast as possible}
+
+Delivering as fast as possible is a lean practice as well as an agile one. In lean the idea is that when you deliver fast you get feedback fast and can react to the feedback. To deliver fast Poppendieck \& Poppendieck suggest a few tools to use. The first, and perhaps most fundamental, tool to deliver fast in lean is limit WIP. By settings hard boundaries on the amout of work in the system at any given point the system is encouraged to seek out bottlenecks and resolve them. Reducing WIP also leads to concrete timesavings in the form of reduced switching times and the drop in utilization that these cause.\cite{poppendieck2003lean}
+
+The pull system in such a way that work is not pushed to the next stage, but instead each stage pulls work from the previous stage. This system is used to make sure no part of the process becomes overworked. It also helps people feel empowered, as they know their tasks and can work independently by choosing their tasks from the list of work available from the previous stage.\cite{poppendieck2003lean}
+
+This chapter also presents queuing theory and how it fits with the idea of lean and delivering fast. The theory is concerned with cycle time, the time it takes from an entity to entering the process to the time it exits. This time needs to be short in order to be able to deliver fast, and for it to be short there can be little queues and variability in the system.\cite{poppendieck2003lean}
+
+The authors also point out that sometimes it is enough to calculate how much time a new tool will save compared to the cost of acquiring the tool. This is because delivering fast might have an impact on how valuable the delivered product is.\cite{poppendieck2003lean} For example, being first to market might allow you to ask for a premium price that would make the tool wort the cost after all.
+
+\subsection{Empower the team}
+
+Empowering the team is about motivating the team to do great work. If the team feels they have a purpose and are able to work towards it they can be more productive compared to being told what to do. Access to the customer is mentioned as a positive factor for both motivating and empowering the team.\cite{poppendieck2003lean} This concept of empowering the team is closely related to the concept of self organizing teams that agile promotes. The self organized team moves towards a common goal and organizes themselves in the best way to achieve that goal. 
+
+The lean approach promoted by Poppendieck \& Poppendieck mentions the ``master developer'' as a tool to be used to empower the team. This is the concept of a experienced developer who keeps the overall picture in mind.\cite{poppendieck2003lean} This approach stems from the concept of the master engineer at Toytota\cite{poppendieck2003lean}, but is not commonly used as a concept in agile. It may be that the concept of self organizing teams and scrum masters have eclipsed the master developer.
+
+
+\subsection{Build integrity in}
+
+The concept of integrity is in this context, if not completely then approximately, the same as quality. Software quality seems like the preferred phrasing these days and if integrity is considered the same as quality a lot of similarities with the lean and agile approaches emerge.
+
+The authors mention model driven design as a tool to achieve integrity. They describe it as a method where a model is construction on which all development is based. This model is understandable by both the customer and the development team.\cite{poppendieck2003lean} This concept is very close to the agile approach of acceptance testing. Where the customer is asked to test the product in order to validate that a feature was implemented as intended.
+
+Another tactic to achieve integrity presented by Poppendieck \& Poppendieck is to use proven components.\cite{poppendieck2003lean} One possible way to achieve this in daily development would be to use open source components that have been used elsewhere and are battle tested, so to speak.
+
+Refactoring and testing are also mentioned as tools to build in quality.\cite{poppendieck2003lean} Both are widely accepted good practices and should be a rule rather than an exception in any software project.
+
+The main takeaway from the lean concept of building integrity in, as presented by Poppendieck \& Poppendieck, is that they tools they present and advocate for are not that different from the tools used today in software development to achieve good quality. Lean software development advocates for sound engineering principles.
+
+
+\subsection{See the whole}
+
+See the whole, again, emphasizes the lean concept of flow and optimizing the whole process rather than individual steps. In fact, local optimizations are mentioned as one specific problem that may seem like added value, but are in fact adding waste to the overall process. One solution to this is to use aggregate data. By using data that is not tied to a specific measurable entity, the focus stays on the overall picture.\cite{poppendieck2003lean}
+
+The authors also point out that it is often hard to see the real cause of a problem. To overcome this they suggest the method of the five whys. Ask ``Why?'' five times, and you are more likely to find the root cause of a problem and not only the symptoms.\cite{poppendieck2003lean} This method is heavily promoted at Futurice, and has led to successfully solving customers' root problems instead of addressing symptoms.
+
+The whole may also be extended outside ones own organization. Including vendors and suppliers in the overall pictures results in possibilities to extend the lean methods further than ones own organization and claim the benefits. This may of course be difficult, and the book goes through several forms of contracts with their pros and cons. The foundational idea in this relationship is trust. When suppliers, vendors and customers can trust each other waste is minimized and value is maximized.\cite{poppendieck2003lean}
+
+
+\section{Past case studies}
 \label{section:pastleanprojects}
 
-This section compares the existing literature on lean software projects.\\
+This section presents the existing literature on lean software projects.\\
 
 
 \subsection{Timberline Inc.}
 \label{timberline}
 
-Timberline Inc. case study. Probably the first case of adopting lean principles to software development.\cite{Middleton2005Lean}
+The case study of Timberline Inc. seems to be one of the first case studies done on lean software development methods. In this study the authors study how a traditional software development company used lean principles in order to streamline work and cut waste. The authors were also interested in how companies involved in both manufacturing and software could match the already implemented lean processes of manufacturing to software development. At this time software development was not generally thought of as lean or iterative, but it was clear that software was becoming a larger part of manufactured products.\cite{Middleton2005Lean}
+
+The focus of this lean transformation was the concept of `takt', the tempo of development. The development team was forced to switch between tasks as too much work was being pushed into the system, causing the amount of work in progress to increase. Incomplete code as well as time spend on switching tasks are sources of waste in lean software development. This switching back and forth, also called thrashing, was mitigated by splitting projects into smaller pieces called `kits'. Smaller units of work and a WIP limit effectively causes the system to flow more smoothly.\cite{Middleton2005Lean} This concept of smaller batch sizes is essential for any iterative process as well as the fast feedback cycle used in lean.
+
+Timberline also used the concept of a daily stand-up meeting familiar from agile. They also moved team members around to form co-located teams. This was mentioned to cause some dissatisfaction in the well established organization, but the challenges were overcome.\cite{Middleton2005Lean} This concept of co-located teams is a core concept of agile for the same reasons it is important in lean software development. Having a short as possible feedback cycle is crucial to catch defects as soon as possible, before they become costly.
+
+The existing processes in the organization caused problems for the movement of people to those areas of the production flow that needed more resources. The reason for this was simple legacy and history. Once these outdated processes were identified they could be improved easily.\cite{Middleton2005Lean} These habits and old processes may often persist only because there is no radical change in the environment. Adopting lean processes with an open mind will, at the very least, allow the organization to take a critical look at the existing processes.
+
+The study also points out the importance of creating a learning organization by gathering information and using it to improve the process. The study does not go into detail as to how this was accomplished. The test used for how well information was displayed was that a person unfamiliar with the work could walk into the project area and see the current state.\cite{Middleton2005Lean}
+
+Self-managing teams were also a result of gathering data and using it for decision making. The positive results mentioned in the study were reduced management costs\cite{Middleton2005Lean} but another aspect of a self-managing team is likely to be empowerment. The motivation of the team may very well rise considerably when they feel empowered to make their own decisions. Empowerment is also one of the seven principles persented by Poppendieck \& Poppendieck \cite{poppendieck2003lean}.
+
+The clear conclusion of the study was that lean techniques do transfer into software development. Processes were clearly improved. Extreme examples of improved processes included one in which only 1.4\% of steps added value before the move to lean. After implementing lean the time to fix defects during the development cycle dropped 65\%-80\%, among other improvements. Customer satisfaction was also observed to be ``overwhelmingly positive'' and was speculated to be because of iterative development.\cite{Middleton2005Lean}
+
+This study, like others, points out that the move to lean has to be a company wide effort.\cite{Middleton2005Lean} This is tightly related to the concept of optimizing the whole. If the whole organization is not on board with the lean transformation, then the value added by it can only be limited to part of the organization at best.
 
 
 \subsection{BBC Worldwide}
 \label{bbc}
 
-BBC Worldwide case study. The gist of it is that the performance of the team improved when adopting lean practices, but there were some challenges in fitting the the lean principles with the rest of the company.\cite{Middleton2012Lean}
+This study followed the introduction of lean practices in a nine person team working for the BBC Worldwide organization. The team worked on various tasks for customers inside the BBC and included management, development and testing roles.\cite{Middleton2012Lean}
+
+The study focused a fair bit on lead time. That is, the time from a customer request to the time the requested entity is delivered. Variance in lead time was something that was to be reduced, as low variance makes for a more stable and predictable process. By reducing variance and decreasing the size of units of work, the team was able to reduce cycle times and achieve a greater number of small deliverables.\cite{Middleton2012Lean} This type of increase in number and decrease in size can enable faster iterations and allows a team to build the right thing more quickly.
+
+Building in short iterations also reduces risk, as there is less unfinished code waiting. This reduces both the risk of building the wrong thing as well as the risk of bugs in the code. The study noted a practical example of this by stating that customers were able to evaluate a ``...tangible product rather than just progress reports''. The data also indicated that there were fewer bugs in the code and these bugs were fixed faster.\cite{Middleton2012Lean}
+
+A familiar practice from agile, the daily stand-up, was used by the team. However, the study points out that the stand-up focuses on the tasks and data and not as much on the people, according to the study, is the custom in agile.\cite{Middleton2012Lean} This could be a misunderstanding of the ideas of agile by the authors of the study. Both the agile and lean ways of conducting stand-ups focus on knowledge sharing in order to facilitate a smoother development process. Badly implemented ways of doing this may of course affect either implementation and begin to focus more on assigning blame and measuring people, which is usually seen as unhealthy. The study also pointed out that the stand-ups were not meant for team members to give reports of their work. The most efficient way to conduct the stand-ups was for each team-member to highlight problems they had encountered so these could be addressed and the flow would not be interrupted.\cite{Middleton2012Lean} This is also the idea behind the agile stand-ups, but it can be misunderstood.
+
+Performing these daily stand-ups in front of the Kanban boards used by the team served a special purpose. By analyzing the placements of the tasks on the board it was easy to visually see bottlenecks which interrupted the flow of development. Eliminating these bottlenecks would then be one way for blocked team members to do meaningful work while not breaking their WIP limit, as specified by the lean principles.\cite{Middleton2012Lean}
+
+The type of work the team performed did not change, but the way they handled the requested pieces did. The team focused on splitting requests into small pieces with, what they called, Minimal Marketable Features.\cite{Middleton2012Lean} This idea is closely related to the Minimum Viable Product idea presented by Eric Ries. \cite{ries2011lean} Both are in essence the same approach of delivering maximal value to the customer with minimum effort in order to then learn and adapt.
+
+The study also pointed out that lean practices are not an alternative or replacement of professional software engineering practices.\cite{Middleton2012Lean} This supports the idea that lean is a set of principles, rather than practices. Challenges related to the new, lean, process was, according to the study, often due to constraints with the existing organization and their ways of working compared to the team using lean. The study listen this as a reason why lean is more about a cultural shift than it is about implementing certain practices. \cite{Middleton2012Lean}
 
 
 \subsection{Electrobit}
@@ -97,6 +212,13 @@ An overall conclusion of the problems uncovered in the study was that problems w
 
 \subsection{Others}
 \label{othercases}
+
+\fixme{Mention other studies?}
+
+\section{Comparison}
+\label{section:comparison}
+
+
 
 \section{Research problem and question}
 \label{section:problem}
