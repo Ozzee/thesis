@@ -134,7 +134,7 @@ This section presents the existing literature on lean software projects.\\
 \subsection{Timberline Inc.}
 \label{timberline}
 
-The case study of Timberline Inc. seems to be one of the first case studies done on lean software development methods. In this study the authors study how a traditional software development company used lean principles in order to streamline work and cut waste. The authors were also interested in how companies involved in both manufacturing and software could match the already implemented lean processes of manufacturing to software development. At this time software development was not generally thought of as lean or iterative, but it was clear that software was becoming a larger part of manufactured products.\cite{Middleton2005Lean}
+The case study of Timberline Inc. appears to be one of the first case studies done on lean software development methods. In this study the authors study how a traditional software development company used lean principles in order to streamline work and cut waste. The authors were also interested in how companies involved in both manufacturing and software could match the already implemented lean processes of manufacturing to software development. At this time software development was not generally thought of as lean or iterative, but it was clear that software was becoming a larger part of manufactured products.\cite{Middleton2005Lean}
 
 The focus of this lean transformation was the concept of `takt', the tempo of development. The development team was forced to switch between tasks as too much work was being pushed into the system, causing the amount of work in progress to increase. Incomplete code as well as time spend on switching tasks are sources of waste in lean software development. This switching back and forth, also called thrashing, was mitigated by splitting projects into smaller pieces called `kits'. Smaller units of work and a WIP limit effectively causes the system to flow more smoothly.\cite{Middleton2005Lean} This concept of smaller batch sizes is essential for any iterative process as well as the fast feedback cycle used in lean.
 
@@ -170,7 +170,7 @@ The study also pointed out that lean practices are not an alternative or replace
 
 
 \subsection{Electrobit}
-\label{finnishprovider}
+\label{electrobit}
 
 Electrobit is a Finnish provider of wireless embedded systems. The case study was conducted in 2010 and the organization had used agile practices since 2007. The case study followed how some key performance indicators (KPI) changed as the organization started using lean practices. \cite{Rodriguez2014Combining}
 
@@ -218,7 +218,31 @@ An overall conclusion of the problems uncovered in the study was that problems w
 \section{Comparison}
 \label{section:comparison}
 
+\begin{table}
+  \begin{tabular}{ | l | p{65pt} | p{65pt} | p{65pt} | p{65pt} |}
+    \hline
+      & Timberline Inc. (\ref{timberline}) & BBC Worldwide (\ref{bbc}) & Electrobit (\ref{electrobit}) & Two Case Studies (\ref{twocasestudies}) \\
+    \hline
+    Eliminate waste & Strong & None   & Strong & Strong \\
+    \hline
+    Flow            & Strong & Strong & Strong & None \\
+    \hline
+    Learning        & Strong & Strong & Strong & Strong \\
+    \hline
+    Empowerment     & Strong & None   & Strong & Strong \\
+    \hline
+    Pull            & None   & Strong & Strong & None \\
+    \hline
+    Deliver fast    & Some   & Strong & Strong & None \\
+    \hline
+    Quality         & Some   & Some   & Some   & Strong \\
+    \hline
+  \end{tabular}
+  \caption{Focus areas of the case studies}
+  \label{tbl:practices}
+\end{table}
 
+One thing is common amongst all the case studies: They are done at companies producing their own products using a known technology stack. A software consultancy company could face a host of unknowns regarding the business context of their customers as well as the technology that is used. However, a lean and agile partner could be exactly what a traditional behemoth needs to stay competitive in a fast paced business.
 
 \section{Research problem and question}
 \label{section:problem}
