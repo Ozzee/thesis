@@ -29,14 +29,9 @@
 % It is better than just writing something to comments, since it is shown in the output file. If 
 % mydraft is declared (in documentclass), text will be shown bold between two FIXMEs. If not, text 
 % will be shown normally.
-\newcommand{\fixme}[1]{#1}
-% Draft command is used in the cover page to show the date of the
-% draft (assumed to be today)
-\newcommand{\DRAFT}{}
-\DeclareOption{mydraft}{
-\renewcommand{\fixme}[1]{\textsc{\small !Fixme} \textbf{#1}\textsc{\small Fixme!}}
+\newcommand{\fixme}[1]{
+\textsc{\small (Fixme:)} \textbf{#1} \textsc{\small (Fixme)}
 }
-\ProcessOptions
 
 \input{description.tex}
 
@@ -44,7 +39,10 @@
 \begin{document}
 
 \title{\TITLE}
-\AUTHOR
+\subtitle{\SUBTITLE}
+\author{\AUTHOR}
+\date{(Draft)}
+\maketitle
 
 \chapter{Abstract}
 \ABSTRACTEN
