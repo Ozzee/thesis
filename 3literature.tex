@@ -38,7 +38,7 @@ One book in particular has been the foundation of many lean initiatives of vario
 
 \subsection{Eliminate waste}
 
-Eliminate waste is the fundamental principle of lean. Waste in this context is understood as anything that does not produce value to the customer. This may seem like a clear definition, but once one starts measuring what is actually producing value and what is not the results may be surprising. In manufacturing inventory is considered to be waste. Ideally products should move from one stage to the next immediately. In software engineering one equivalent of inventory is unfinished features.\cite{poppendieck2003lean} 
+Eliminate waste is the fundamental principle of lean. This is also the only principle that was not later modified by Poppendieck \& Poppendieck.\cite{Poppendieck2012Lean} Waste in this context is understood as anything that does not produce value to the customer. This may seem like a clear definition, but once one starts measuring what is actually producing value and what is not the results may be surprising. In manufacturing inventory is considered to be waste. Ideally products should move from one stage to the next immediately. In software engineering one equivalent of inventory is unfinished features.\cite{poppendieck2003lean} Knowledge about how to deliver value more efficiently is, however, not waste\cite{Poppendieck2012Lean}. Activities that actually lead to more knowledge about the process need to be identified and separated from those that do not add knowledge.
 
 One of the main reasons why inventory is considered waste is that inventory may contain defects that have not yet been discovered. These defects become much more expensive to fix later in the process. Defects are discovered much faster in the next steps of the process when batch sizes are small and inventory is minimal. In software engineering inventory often manifests as features waiting for testing or other forms of approval. Inventory in the form of features stuck at some crucial point in the system may also be blocking other, more important features.\cite{poppendieck2003lean}
 
@@ -64,16 +64,6 @@ Learning to see waste can be challenging when unfamiliar with the concept. For t
 
 Eliminate waste is one principle that is present in all of the case studies presented in this paper \cite{Middleton2001Lean}\cite{Middleton2012Lean}\cite{Middleton2005Lean}\cite{Rodriguez2014Combining}. This seems to indicate that this is indeed considered to be the most important principle of lean.
 
-\subsection{Amplify learning}
-
-Amplify learning is the second principle presented in the book, and focuses on quality and learning\cite{poppendieck2003lean}. This principle was later redefined by Poppendieck as ``learn constanstly''\cite{Poppendieck2010Lean}. The principle of learning is crucial in lean, as the whole process is based on the aforementioned concept of removing waste. For this to be successful waste needs to be identified and this skill has to be learned. The book presents several tools to help facilitate learning. 
-
-Many of the tools presented are familiar from the world of agile software development. Feedback is a natural and effective part of learning. For this to be an effective tool in practice there needs to be a feedback cycle and effort to gather feedback. The book also mentions that software projects are often ill structured problems where a mentality of trying something first then fixing it works better than a predetermined plan.\cite{poppendieck2003lean} This ties closely to the build-measure-learn cycle proposed by Ries \cite{ries2011lean}. Another way of looking at is is seeing the software context as a chaotic system where a clear solution is not known.\fixme{source?}
-
-The authors also mention iterations, a concept central to agile development. Iterations enable learning as knowledge about the process and project is refined each iteration. \cite{poppendieck2003lean}
-
-A couple of tools that are probably not as familiar to those familiar with agile methodologies are synchronization and set-based development. Synchronization is closely related to continous integration and set-based development explores multiple options simultaneously before committing to one solution.\cite{poppendieck2003lean}
-
 \subsection{Decide as late as possible}
 
 Deciding as late as possible is about keeping several option available until the last responsible moment to make a decision. The reason is the same for lean as it is in agile: there will be changes, so the right thing to do is prepare to be able to handle change.\cite{poppendieck2003lean}
@@ -86,15 +76,33 @@ This chapter of the book also mentions several practices that are generally cons
 
 Empowerment is also mentioned as a way of deciding as late as possible. In this context empowerment is about teaching the people working on a project to how to make decision. The idea is that the people working on the project are those who know the needs of the project and can make the best decisions about how to proceed. By allowing the team to make the decision it is possible to avoid overhead and get the best possible information available. There is no need for management to get involved, which frees up management resources for other tasks.\cite{poppendieck2003lean}
 
+
+\subsection{Amplify learning}
+
+Amplify learning is the second principle presented in the book, and focuses on quality and learning\cite{poppendieck2003lean}. This principle was later redefined by Poppendieck as ``learn constanstly''\cite{Poppendieck2010Lean}. The principle of learning is crucial in lean, as the whole process is based on the aforementioned concept of removing waste. For this to be successful waste needs to be identified and this skill has to be learned. The book presents several tools to help facilitate learning.
+
+Many of the tools presented are familiar from the world of agile software development. Feedback is a natural and effective part of learning. For this to be an effective tool in practice there needs to be a feedback cycle and effort to gather feedback. The book also mentions that software projects are often ill structured problems where a mentality of trying something first then fixing it works better than a predetermined plan.\cite{poppendieck2003lean} This ties closely to the build-measure-learn cycle proposed by Ries \cite{ries2011lean}. Another way of looking at is is seeing the software context as a chaotic system where a clear solution is not known.\fixme{source?}
+
+The authors also mention iterations, a concept central to agile development. Iterations enable learning as knowledge about the process and project is refined each iteration. \cite{poppendieck2003lean}
+
+A couple of tools that are probably not as familiar to those familiar with agile methodologies are synchronization and set-based development. Synchronization is closely related to continous integration and set-based development explores multiple options simultaneously before committing to one solution.\cite{poppendieck2003lean}
+
+The concept of deciding as late as possible that is mentioned in the original book by Poppendieck \& Poppendieck is not present in the later revision of the principles presented by Poppendieck \& Cosumano. The principle is, however, included in the ``learn constantly'' principle. Deciding as late as possible is done to learn as much as possible before making a decision, so including it in the learning principle makes sense.
+
+
 \subsection{Deliver as fast as possible}
 
-Delivering as fast as possible is a lean practice as well as an agile one. In lean the idea is that when you deliver fast you get feedback fast and can react to the feedback. To deliver fast Poppendieck \& Poppendieck suggest a few tools to use. The first, and perhaps most fundamental, tool to deliver fast in lean is limit WIP. By settings hard boundaries on the amout of work in the system at any given point the system is encouraged to seek out bottlenecks and resolve them. Reducing WIP also leads to concrete timesavings in the form of reduced switching times and the drop in utilization that these cause.\cite{poppendieck2003lean}
+Delivering as fast as possible is a lean practice as well as an agile one. In lean the idea is that when you deliver fast you get feedback fast and can react to the feedback.\cite{poppendieck2003lean} The principle is mentioned in a later article as ``Deliver fast''.\cite{Poppendieck2012Lean} 
 
-The pull system in such a way that work is not pushed to the next stage, but instead each stage pulls work from the previous stage. This system is used to make sure no part of the process becomes overworked. It also helps people feel empowered, as they know their tasks and can work independently by choosing their tasks from the list of work available from the previous stage.\cite{poppendieck2003lean}
+To deliver fast Poppendieck \& Poppendieck suggest a few tools to use. The first, and perhaps most fundamental, tool to deliver fast in lean is limit WIP. By settings hard boundaries on the amount of work in the system at any given point the system is encouraged to seek out bottlenecks and resolve them. Reducing WIP also leads to concrete time savings in the form of reduced switching times and the drop in utilization that these cause.\cite{poppendieck2003lean}
 
-This chapter also presents queuing theory and how it fits with the idea of lean and delivering fast. The theory is concerned with cycle time, the time it takes from an entity to entering the process to the time it exits. This time needs to be short in order to be able to deliver fast, and for it to be short there can be little queues and variability in the system.\cite{poppendieck2003lean}
+Delivering fast means a software project can not be equated with an item to be manufactured. Instead, the small, incremental pieces delivered should be the items and the focus should be set on optimizing the flow to deliver these small updates.\cite{Poppendieck2012Lean}
 
-The authors also point out that sometimes it is enough to calculate how much time a new tool will save compared to the cost of acquiring the tool. This is because delivering fast might have an impact on how valuable the delivered product is.\cite{poppendieck2003lean} For example, being first to market might allow you to ask for a premium price that would make the tool wort the cost after all.
+The pull system works in such a way that work is not pushed to the next stage, but instead each stage pulls work from the previous stage. This system is used to make sure no part of the process becomes overworked. It also helps people feel empowered, as they know their tasks and can work independently by choosing their tasks from the list of work available from the previous stage.\cite{poppendieck2003lean}
+
+Queuing theory is another factor in flow thinking and it fits with the idea of lean and delivering fast. The theory is concerned with cycle time, the time it takes from an entity to entering the process to the time it exits. This time needs to be short in order to be able to deliver fast, and for it to be short there can be little queues and variability in the system.\cite{poppendieck2003lean}
+
+Poppendieck \& Poppendieck also point out that sometimes it is enough to calculate how much time a new tool will save compared to the cost of acquiring the tool. This is because delivering fast might have an impact on how valuable the delivered product is.\cite{poppendieck2003lean} For example, being first to market might allow you to ask for a premium price that would make the tool wort the cost after all.
 
 \subsection{Empower the team}
 
@@ -102,10 +110,12 @@ Empowering the team is about motivating the team to do great work. If the team f
 
 The lean approach promoted by Poppendieck \& Poppendieck mentions the ``master developer'' as a tool to be used to empower the team. This is the concept of a experienced developer who keeps the overall picture in mind.\cite{poppendieck2003lean} This approach stems from the concept of the master engineer at Toytota\cite{poppendieck2003lean}, but is not commonly used as a concept in agile. It may be that the concept of self organizing teams and scrum masters have eclipsed the master developer.
 
+As businesses become more dependent on IT and it becomes a part of their core business the concept of IT-departments should also change. Software development can no longer be seen as a separate entity that can be isolated in some IT-department. To engage everyone and optimize the whole software development will most likely involve other functions besides software development.\cite{Poppendieck2012Lean}
+
 
 \subsection{Build integrity in}
 
-The concept of integrity is in this context, if not completely then approximately, the same as quality. Software quality seems like the preferred phrasing these days and if integrity is considered the same as quality a lot of similarities with the lean and agile approaches emerge.
+The concept of integrity is in this context understood as quality. The principle was later expressed as ``build quality in''.\cite{Poppendieck2012Lean} Software quality seems like the preferred phrasing these days and if integrity is considered the same as quality a lot of similarities with the lean and agile approaches emerge.
 
 The authors mention model driven design as a tool to achieve integrity. They describe it as a method where a model is construction on which all development is based. This model is understandable by both the customer and the development team.\cite{poppendieck2003lean} This concept is very close to the agile approach of acceptance testing. Where the customer is asked to test the product in order to validate that a feature was implemented as intended.
 
@@ -118,12 +128,20 @@ The main takeaway from the lean concept of building integrity in, as presented b
 
 \subsection{See the whole}
 
-See the whole, again, emphasizes the lean concept of flow and optimizing the whole process rather than individual steps. In fact, local optimizations are mentioned as one specific problem that may seem like added value, but are in fact adding waste to the overall process. One solution to this is to use aggregate data. By using data that is not tied to a specific measurable entity, the focus stays on the overall picture.\cite{poppendieck2003lean}
+See the whole, again, emphasizes the lean concept of flow and optimizing the whole process rather than individual steps. In a later article, Mary Poppendieck talks about ``Optimize the whole'', a slight modification to the principle \cite{Poppendieck2012Lean} the idea however, remains the same. 
+
+Local optimizations are mentioned as one specific problem that may seem like added value, but are in fact adding waste to the overall process. One solution to this is to use aggregate data. By using data that is not tied to a specific measurable entity, the focus stays on the overall picture.\cite{poppendieck2003lean}
 
 The authors also point out that it is often hard to see the real cause of a problem. To overcome this they suggest the method of the five whys. Ask ``Why?'' five times, and you are more likely to find the root cause of a problem and not only the symptoms.\cite{poppendieck2003lean} This method is heavily promoted at Futurice, and has led to successfully solving customers' root problems instead of addressing symptoms.
 
 The whole may also be extended outside ones own organization. Including vendors and suppliers in the overall pictures results in possibilities to extend the lean methods further than ones own organization and claim the benefits. This may of course be difficult, and the book goes through several forms of contracts with their pros and cons. The foundational idea in this relationship is trust. When suppliers, vendors and customers can trust each other waste is minimized and value is maximized.\cite{poppendieck2003lean}
 
+
+\subsection{Keep Getting Better}
+
+A new principle, not presented in the book by Poppendieck \& Poppendieck, but presented in a later article is ``Keep Getting Better''. Even when every systems seems to be running well it is very likely not done and could still be improved. The idea behind this principle is to always look for opportunities to be better. Every systems should be inspected using the scientific method and improved whenever possible.\cite{Poppendieck2012Lean}
+
+Getting better is more than just keeping weekly meetings to brainstorm about what could be done next. It should engrain the whole organization on a deeper level. This may be why Toyota has allowed it's methods to be studied in such details. It is not the practices that matter, but the deeper principles behind them.\cite{rother2009toyota}
 
 \section{Past case studies}
 \label{section:casestudies}
@@ -242,11 +260,11 @@ An overall conclusion of the problems uncovered in the study was that problems w
   \label{tbl:practices}
 \end{table}
 
-The case studies in section \ref{section:casestudies} all have their own areas of focus, but some areas are clearly the focus of most studies. Table \ref{tbl:practices} shows a summary of lean principles and the amount of focus they receive in each case study. The table shows that learning has a strong focus in all the case studies. Quality has at least some focus in all of the studies. Empowerment, flow and eliminating waste have a strong focus in three out of four case studies, but no focus in one. Interestingly, there is no single case study that ignores these three principles, the focus is quite spreadout among the case studies.
+The case studies in section \ref{section:casestudies} all have their own areas of focus, but some areas are clearly the focus of most studies. Table \ref{tbl:practices} shows a summary of lean principles and the amount of focus they receive in each case study. The table shows that learning has a strong focus in all the case studies. Quality has at least some focus in all of the studies. Empowerment, flow and eliminating waste have a strong focus in three out of four case studies, but no focus in one. Interestingly, there is no single case study that ignores these three principles, the focus is quite spread out among the case studies.
 
 One aspect of the case studies that should be mentioned is that the  ``Two Case Studies'' (\ref{twocasestudies}) study is very small compared to the other case studies. The focus on this study is therefore not as spread out as some of the others. Some of the principals would also have been hard to measure in this small scale study.
 
-Organizational resistance and challenges related to the existing organization was mentioned in all of the studies as being having a negative impact on lean principles.
+Organizational resistance and challenges related to the existing organization was mentioned in all of the studies as having a negative impact on lean principles.
 
 \begin{table}
   \begin{tabular}{ | l | l |}
@@ -277,7 +295,7 @@ Big companies often can, and will, use subcontractors to outsource parts of thei
 
 This question is an interesting one. If small and lean partners could be utilized to achieve a lean approach to projects it could clear the way for an overall more lean organization. At the very least, these lean partners could be utilized in projects where competition favors a lean approach.
 
-The research problem is defined as follows:\\
+The research problem is thus defined as follows:\\
 
 \textit{How can companies utilize lean partners when undertaking projects in unfamiliar technology domains?}\\
 
@@ -288,7 +306,7 @@ To investigate this problem three research questions have been set up in table \
   \begin{tabular}{p{200pt} | p{70pt} | p{70pt}}
     Question & Literature review & Empirical study \\
     \hline
-    What are the currently available best practices for lean software projects? & x & \\
+    What are the biggest challenges faced by organizations looking to move to lean software development? & x & \\
     How can a vendor utilize lean principles to navigate a new technology and business domain? &  & x \\
     How can a customer company utilize a lean partner to execute lean projects? &  & x \\
   \end{tabular}
